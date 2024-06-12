@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Pago</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1txk05y5PAMVXzv" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right " id="sidebar-wrapper">
+            <div class="sidebar-heading tabela "> ID USUARIO </div>
+            <div class="list-group list-group-flush tabela   ">
+                <a href="#" class="list-group-item list-group-item-action .bg-primary">Início</a>
+                <a href="#" class="list-group-item list-group-item-action .bg-primary">Seu perfil</a>
+                <a href="#" class="list-group-item list-group-item-action .bg-primary">Ajuda</a>
+                <a href="#" class="list-group-item list-group-item-action .bg-primary">Seu dinheiro</a>
+                <a href="#" class="list-group-item list-group-item-action .bg-primary">Atividade</a>
+                <a href="#" class="list-group-item list-group-item-action .bg-primary">Enviar dinheiro</a>
+                
+                <a href="#" class="list-group-item list-group-item-action .bg-primary">Relatórios</a>
+
+
+                <a href="#" class="list-group-item list-group-item-action .bg-primary">Sair</a>
+                <a href="#" class="list-group-item list-group-item-action .bg-primary">Baixe o app</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Usuario</button>
+            </nav>
+            <main role="main" class="col-md-10 ml-sm-auto px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Seu dinheiro</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Saldo disponível</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">R$ 0,05</h6>
+                                <p class="card-text">Rendeu R$ 0,14 nos últimos 12 meses</p>
+                                <h5 class="card-title">Extrato</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Rendimentos: + R$ 0,02 (5 de junho)</li>
+                                    <li class="list-group-item">Pagamento com QR Pix: - R$ 80,00 (4 de junho)</li>
+                                    <li class="list-group-item">Rendimentos: + R$ 0,03 (4 de junho)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Seus gastos</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Total de junho</h6>
+                                <p class="card-text">R$ 80</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div class="alert alert-info" role="alert">
+                        Traga seu salário e ganhe vantagens!
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+YpDl6ELhtSTcz/HMDW64utr2vM3C" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+</html>
